@@ -1,0 +1,114 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  color: #E4E5EA;
+  margin-top: 90px;
+  font-weight: 400;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.boldTitle {
+  background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.benefits {
+  display: flex;
+  font-size: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+}
+
+.benefitTitle {
+  font-size: 18px;
+  text-align: right;
+  font-weight: 500;
+
+}
+
+.benefitBoldTitle {
+  &,
+  &__2 {
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+    text-align: right;
+  }
+  background-image: linear-gradient(90deg, #fc8839 20%, #fc1f1c 100%);
+
+  &__2 {
+    background-image: linear-gradient(90deg, #fcb045 50%, #fc6e33 100%);
+  }
+}
+
+
+.benefitItem {
+  text-align: right;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  max-width: 135px;
+}
+
+.benefitItem:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefitItemTitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.benefitItemDesc {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+}
+.consultBtn {
+  float: right;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .content {
+    flex-direction: column;
+    h1{
+      font-size: 36px;
+    }
+  }
+  .benefits {
+    justify-content: flex-start;
+  }
+  .benefitTitle, .benefitItem {
+    text-align: left;
+  }
+  .benefitItemDesc {
+    display: none;
+  }
+  .benefitBoldTitle {
+    &, &__2 {
+      text-transform: none;
+    }
+  }
+  .benefitItemTitle {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

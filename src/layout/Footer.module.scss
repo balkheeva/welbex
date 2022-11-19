@@ -1,0 +1,62 @@
+.footer {
+  color:#E4E5EA;
+  clear: both;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 245px;
+  margin-bottom: 20px;
+  &__aboutUs {
+    flex-direction: column;
+    margin-right: 101px;
+
+  }
+  &__menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    display: flex;
+  }
+  &__item {
+    margin-bottom: 10px;
+    flex-basis: 50%;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: flex-end;
+    &__item {
+      margin-bottom: 20px;
+      flex-basis: 50%;
+    }
+    &__copyright {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: 70px;
+      text-align: right;
+      a {
+        text-decoration: underline;
+      }
+      div {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__icons {
+    margin-bottom: 20px;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__group+&__group {
+    margin-left: 52px;
+  }
+  &__title {
+    padding-bottom: 20px;
+    flex-basis: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    color: #656566;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,29 @@
+.navbar {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.navbar, .rightBar, .leftBar {
+    display: flex;
+    justify-content: space-between;
+}
+.navItem {
+    padding-right: 30px;
+}
+
+.logo {
+    width: 140px;
+    padding-right: 30px;
+}
+.logo p {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo, .rightBar {
+        display: none;
+    }
+}
