@@ -16,6 +16,7 @@
     display: flex;
   }
   &__item {
+    display: block;
     margin-bottom: 10px;
     flex-basis: 50%;
   }
@@ -58,5 +59,25 @@
     font-size: 14px;
     color: #656566;
     text-transform: uppercase;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    margin-top: 45px;
+    flex-direction: column;
+    &__contacts {
+      align-items: flex-start;
+      margin: 0;
+    }
+    &__aboutUs, &__menu, &__contacts {
+      margin-bottom: 30px;
+    }
+    &__contacts{
+      &__copyright {
+        margin-top: 50px;
+        text-align: left;
+      }
+    }
+
   }
 }

@@ -6,7 +6,7 @@ export default function Footer(props) {
             <div className={styles.footer__aboutUs}>
                 <div className={styles.footer__title}>О компании</div>
                 {props.footerAboutUsItems.map(item => (
-                    <div key={item.name} className={styles.footer__item}>{item.name}</div>
+                    <a key={item.name} href={item.href}className={styles.footer__item}>{item.name}</a>
                 ))}
             </div>
             <div className={styles.footer__menu}>
@@ -14,7 +14,7 @@ export default function Footer(props) {
                 {groupEls(props.footerMenuItems).map((group, i) => (
                     <div className={styles.footer__group} key={i}>
                         {group.map(item => (
-                            <div key={item.name} className={styles.footer__item}>{item.name}</div>
+                            <a key={item.name} href={item.href} className={styles.footer__item}>{item.name}</a>
                         ))}
                     </div>
                 ))}

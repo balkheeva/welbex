@@ -94,6 +94,7 @@
   }
   .benefits {
     justify-content: flex-start;
+    margin-bottom: 40px;
   }
   .benefitTitle, .benefitItem {
     text-align: left;
@@ -110,5 +111,12 @@
     font-family: 'Montserrat';
     font-size: 13px;
     font-weight: 400;
+  }
+  .benefitItem {
+    margin: 0;
+    padding-top: 14px;
+  }
+  .consultBtn {
+    float: none;
   }
 }
