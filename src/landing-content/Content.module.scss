@@ -4,6 +4,9 @@
   color: #E4E5EA;
   margin-top: 90px;
   font-weight: 400;
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-top: 40px;
+  }
 }
 
 .content h1 {

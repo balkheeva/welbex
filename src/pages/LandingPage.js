@@ -7,6 +7,7 @@ import whatsapp from "../images/whatsapp.svg"
 import styles from "./LandingPage.module.scss"
 import Footer from "../layout/Footer";
 import Background from "../layout/Background";
+import noise from "../images/noise.png"
 
 const menuItems = [
     {navItem: "Услуги", navHref: "#"},

@@ -1,7 +1,18 @@
 .elements{
-  position: relative;
+  position: absolute;
   width: 100%;
+  height: 100%;
   z-index: -1;
+  overflow: hidden;
+
+  &__noise {
+    background-image: url("../images/noise.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
   &__purpleLight {
     position: absolute;
     width: 259px;
@@ -12,6 +23,10 @@
     filter: blur(196px);
     left: 45%;
     border-radius: 50%;
+    @media (min-width: 320px) and (max-width: 480px) {
+      left: 258px;
+      top: 107px;
+    }
   }
   &__purpleBall {
     position: absolute;
@@ -23,6 +38,12 @@
     backdrop-filter: blur(2px);
     border-radius: 50%;
     left: 60%;
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 40px;
+      height: 40px;
+      left: 296px;
+      top: 236px;
+    }
 
   }
   &__redBall{
@@ -35,9 +56,14 @@
     box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
     backdrop-filter: blur(2px);
     border-radius: 50%;
+    filter: blur(5px);
     left: 40%;
-
-
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 43px;
+      height: 43px;
+      left: 29px;
+      top: 402px;
+    }
   }
   &__redLight{
     position: absolute;
@@ -49,5 +75,11 @@
     opacity: 0.5;
     filter: blur(196px);
     border-radius: 50%;
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 211px;
+      height: 210px;
+      left: -55px;
+      top: 241px;
+    }
   }
 }
