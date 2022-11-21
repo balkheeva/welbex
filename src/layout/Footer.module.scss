@@ -78,6 +78,9 @@
         text-align: left;
       }
     }
+    &__group+&__group {
+      margin-left: 10px;
+    }
 
   }
 }
